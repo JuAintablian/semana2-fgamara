@@ -10,8 +10,8 @@
     <style>
         body {
             margin: 0;
-            background-color: gray;
-
+            background-color: #02A9E5;
+            color: #fafafa;
             font-family: 'Montserrat', sans-serif;
 
         }
@@ -34,7 +34,7 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            color: #fafafa;
+            padding-left: 300px;
             font-size: 30px;
             font-weight: bold;
         }
@@ -46,7 +46,7 @@
         }
 
         .cabecalho {
-
+            position: -webkit-sticky;
             background-color: transparent;
             margin: 0 0 0 0;
             height: 54px;
@@ -98,19 +98,10 @@
         .menu a:hover,
         .selected {
             background-color: black;
-            color: steelblue;
-
-        }
-
-        .autenticacao {
-            position: absolute;
-            top: 10px;
-            right: 0;
-            float: right;
-            background-color: #333;
 
 
         }
+
 
         .button-small-text {
             margin-top: 15px;
@@ -127,7 +118,23 @@
 
         }
 
-        .first-call {
+        .second-call {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: #02A9E5;
+            align-content: center;
+            justify-content: space-between;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .second-call .event-desc {
+            width: 50%;
+            text-align: justify;
+        }
+
+        .first-call,
+        .third-call {
             background-image: url('./assets/prancheta.png');
             height: 300px;
         }
@@ -177,9 +184,7 @@
     <div class="first-call">
         <header class="cabecalho">
 
-            <button class="menu-toggle">
-                <i class="fa fa-lg fa-bars"></i>
-            </button>
+
             <nav class="menu">
                 <ul>
                     <li>
@@ -189,10 +194,10 @@
                         <a href="#palestrantes">Palestrantes</a>
                     </li>
                     <li>
-                        <a href="#sobre">Sobre</a>
+                        <a href="#programacao">Programação</a>
                     </li>
                     <li>
-                        <a href="#contato">Contato</a>
+                        <a href="#local">Local</a>
                     </li>
 
                 </ul>
@@ -213,18 +218,48 @@
                 <div class="time"><img src="./assets/wall-clock.svg" alt="hora"><span> 19:00H</span></div>
                 <div class="place"><img src="./assets/placeholder.svg" alt="local"><span> ExemploTech</span></div>
                 <a class="button-small-text" href="https://www.sympla.com.br/cloud-talk__565211" target="_blank"> <img
-                    src="https://www.sympla.com.br/images/btn-register se.png"></img> </a>
+                        src="https://www.sympla.com.br/images/btn-register se.png"></img> </a>
 
             </div>
-            
+
         </div>
 
     </div>
+    <div class="second-call">
+        <div id="sympla-widget-565211" height="auto"></div>
+        <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/565211"></script>
+        <div class="event-desc">
+            <h2>Vamos falar sobre tech?</h2>
+            <p class="text-event">As tecnologias exponenciais são inovações e estão crescendo cada vez mais rápidas,
+                pois permitem o aumento da geração de valor um uma curva exponencial. As empresas antigas eram
+                desenvolvidas em um processo linear, mas com a era digital esse cenário mudou completamente. As empresas
+                baseadas em inovação têm seu crescimento bem mais acelerado. </p><br>
+            <p class="text-event">Um exemplo clássico é a Netflix que derrubou a gigante Blockbuster. E podemos citar
+                também outras empresas como Uber, Instagram, que ao entrarem no mercado, vimos empresas com seus modelos
+                de negócios consolidados por décadas, se tornarem ultrapassados.</p><br>
+            <p class="text-event">Basicamente, toda tecnologia disruptiva surgida nos últimos anos é um exemplo de
+                tecnologia exponencial, como:</p><br>
+
+            <h4>E-commerce</h4>
+            <h4>Mídias Sociais</h4>
+            <h4>Internet of Things (IoT)</h4>
+            <h4>Inteligência Artificial</h4>
+            <h4>Cloud computing</h4>
+            <h4>Blockchain</h4>
 
 
-    <div id="sympla-widget-565211" height="auto"></div>
-    <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/565211"></script>
+            <p class="text-event">E o <strong>CLOUD TALK</strong> tem como objetivo trazer algumas tendências de
+                tecnologia que podem ser utilizadas para o crescimento da sua empresa.</p><br>
 
+            <h4>GARANTA JÁ O SEU INGRESSO!</h4>
+
+        </div>
+
+    </div>
+    <div class="third-call">
+        <h2>Conheça os Palestrantes</h2>
+
+    </div>
     <script>
         window.onhashchange = function (e) {
             const oldUrl = e.oldURL.split('#')[1]
