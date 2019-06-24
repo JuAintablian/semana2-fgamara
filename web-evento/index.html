@@ -6,35 +6,54 @@
     <title>Evento</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             background-color: gray;
 
+            font-family: 'Montserrat', sans-serif;
+
         }
 
-        img {
-            height: 30px;
-            margin-top: 10px;
-            margin-left: 8px
-        }
 
-        .logo {
+        .logo img {
             float: left;
-            background-color: #333;
+            width: 100%;
+            height: 120px;
 
-            margin-left: 0px;
-            margin-top: 0px
+        }
+
+        .call-action {
+            display: flex;
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        .cta-infos {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            color: #fafafa;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .call-action .logo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
         }
 
         .cabecalho {
-            background-color: #333;
+
+            background-color: transparent;
             margin: 0 0 0 0;
             height: 54px;
-            border-bottom: 3px solid steelblue;
+
             display: flex;
-            align-content: space-around;
-            
+
+
 
         }
 
@@ -57,20 +76,27 @@
             margin-left: 15px;
         }
 
-        .menu a{
+        .menu {
+            width: 100%;
+            display: flex;
+            align-content: right;
+            justify-content: right
+        }
+
+        .menu a {
+
             text-decoration: none;
             font-family: 'Oswald', sans-serif;
             color: white;
             font-size: 20px;
             display: block;
             padding: 12px 14px;
-            text-align: center;
-            
-
+            text-align: right;
 
         }
 
-        .menu a:hover, .selected{
+        .menu a:hover,
+        .selected {
             background-color: black;
             color: steelblue;
 
@@ -86,6 +112,10 @@
 
         }
 
+        .button-small-text {
+            margin-top: 15px;
+        }
+
         .autenticacao a {
             font-family: 'Oswald', sans-serif;
             text-decoration: none;
@@ -95,6 +125,11 @@
             margin-right: 20px;
 
 
+        }
+
+        .first-call {
+            background-image: url('./assets/prancheta.png');
+            height: 300px;
         }
 
         .botao {
@@ -139,34 +174,56 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="logo">
-            <a href="#inicio">
-                <img src="" alt="Logo" />
-            </a>
-        </div>
-        <button class="menu-toggle">
-            <i class="fa fa-lg fa-bars"></i>
-        </button>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-                <li>
-                    <a href="#palestrantes">Palestrantes</a>
-                </li>
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
+    <div class="first-call">
+        <header class="cabecalho">
 
-            </ul>
-        </nav>
-        
-    </header>
+            <button class="menu-toggle">
+                <i class="fa fa-lg fa-bars"></i>
+            </button>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+                    <li>
+                        <a href="#palestrantes">Palestrantes</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="call-action">
+
+            <div class="logo">
+                <img src="./assets/logo-ct-white.svg" alt="Logo" />
+                <span class="under-logo">Tendências de tecnologia para 2019</span>
+            </div>
+
+            <div class="cta-infos">
+
+                <div class="date"><img src="./assets/calendar.svg" alt="data"><span> 27 JUNHO 2019</span></div>
+                <div class="time"><img src="./assets/wall-clock.svg" alt="hora"><span> 19:00H</span></div>
+                <div class="place"><img src="./assets/placeholder.svg" alt="local"><span> ExemploTech</span></div>
+                <a class="button-small-text" href="https://www.sympla.com.br/cloud-talk__565211" target="_blank"> <img
+                    src="https://www.sympla.com.br/images/btn-register se.png"></img> </a>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <div id="sympla-widget-565211" height="auto"></div>
+    <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/565211"></script>
 
     <script>
         window.onhashchange = function (e) {
