@@ -3,15 +3,12 @@
      background-color: #02A9E5;
      color: #fafafa;
      font-family: 'Montserrat', sans-serif;
-
  }
-
 
  .logo img {
      float: left;
      width: 100%;
      height: 120px;
-
  }
 
  .call-action {
@@ -38,11 +35,7 @@
      background-color: transparent;
      margin: 0 0 0 0;
      height: 54px;
-
      display: flex;
-
-
-
  }
 
  .menu-toggle {
@@ -72,7 +65,6 @@
  }
 
  .menu a {
-
      text-decoration: none;
      font-family: 'Oswald', sans-serif;
      color: white;
@@ -80,16 +72,11 @@
      display: block;
      padding: 12px 14px;
      text-align: right;
-
  }
 
- .nav-link a:hover,
- .selected {
-     margin-top:3px solid white;
-
-
+ .nav-link a:hover, .selected {
+     margin-top: 3px solid white;
  }
-
 
  .button-small-text {
      margin-top: 15px;
@@ -102,8 +89,6 @@
      font-size: 20px;
      margin-left: 10px;
      margin-right: 20px;
-
-
  }
 
  .second-call {
@@ -119,13 +104,12 @@
      text-align: justify;
  }
 
- .text-event{
+ .text-event {
      font-size: 18px;
      line-height: 22px;
  }
 
- .first-call,
- .third-call {
+ .first-call, .third-call {
      background-image: url('/assets/img/topo.png');
      height: 300px;
  }
@@ -135,46 +119,54 @@
      text-decoration: none;
      padding: 14px 10px;
      border-radius: 0px;
-
  }
 
  .destaque {
      color: white;
      background-color: tomato;
-
  }
 
  .destaque:active {
      box-shadow: none;
  }
 
- .btn-participar{
-    border-radius: 1.25rem;
-    background-color: #EF02C0;
-    width: 130px;
-    font-weight: bold;
-    color: #fff;
-    box-shadow: 0px 0px 20px rgba(50, 28, 60, 1);
-    margin-top: 20px;
+ .btn-participar {
+     border-radius: 1.25rem;
+     background-color: #EF02C0;
+     width: 130px;
+     font-weight: bold;
+     color: #fff;
+     box-shadow: 0px 0px 20px rgba(50, 28, 60, 1);
+     margin-top: 20px;
  }
 
  @media (max-width: 660px) {
-     .autenticacao {
+     .countdown-wrapper {
          display: none;
      }
-
  }
 
- @media(max-width: 490px) {
-     .menu {
+ @media (max-width: 660px) {
+     .nav {
          display: none;
      }
+ }
 
-     .menu-toggle {
-         display: block;
-         background-color: #fff;
-         float: right;
-         margin-top: 15px;
-         margin-right: 15px;
+ @media (max-width: 660px) {
+     .local {
+         padding: 0 auto;
+         margin: 0 auto;
+     }
+ }
+
+ @media (max-width: 660px) {
+     .google-maps {
+         display: none;
+     }
+ }
+
+ @media (max-width: 660px) {
+     .cta-infos {
+        background-color: transparent !important;
      }
  }
