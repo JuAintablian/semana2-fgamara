@@ -140,6 +140,15 @@
      margin-top: 20px;
  }
 
+ .section-topo{
+    background-image: url('/assets/img/prancheta.png'); 
+    background-size: 100%;
+ } 
+ @media (max-width: 660px) {
+    .section-topo{
+        background-image: url('/assets/img/prancheta.png'); 
+    }
+ }
  @media (max-width: 660px) {
      .countdown-wrapper {
          display: none;
