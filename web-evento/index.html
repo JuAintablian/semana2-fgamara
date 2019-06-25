@@ -3,263 +3,184 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Evento</title>
+    <title>Cloud talk</title>
+    <link rel="shortcut icon" href="assets/img/ico/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            background-color: #02A9E5;
-            color: #fafafa;
-            font-family: 'Montserrat', sans-serif;
-
-        }
-
-
-        .logo img {
-            float: left;
-            width: 100%;
-            height: 120px;
-
-        }
-
-        .call-action {
-            display: flex;
-            width: 100%;
-            margin-top: 25px;
-        }
-
-        .cta-infos {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            padding-left: 300px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .call-action .logo {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .cabecalho {
-            position: -webkit-sticky;
-            background-color: transparent;
-            margin: 0 0 0 0;
-            height: 54px;
-
-            display: flex;
-
-
-
-        }
-
-        .menu-toggle {
-            display: none;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding-bottom: 50px;
-        }
-
-        li {
-            float: left;
-            height: 54px;
-        }
-
-        li:first-child {
-            margin-left: 15px;
-        }
-
-        .menu {
-            width: 100%;
-            display: flex;
-            align-content: right;
-            justify-content: right
-        }
-
-        .menu a {
-
-            text-decoration: none;
-            font-family: 'Oswald', sans-serif;
-            color: white;
-            font-size: 20px;
-            display: block;
-            padding: 12px 14px;
-            text-align: right;
-
-        }
-
-        .menu a:hover,
-        .selected {
-            background-color: black;
-
-
-        }
-
-
-        .button-small-text {
-            margin-top: 15px;
-        }
-
-        .autenticacao a {
-            font-family: 'Oswald', sans-serif;
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            margin-left: 10px;
-            margin-right: 20px;
-
-
-        }
-
-        .second-call {
-            display: flex;
-            flex-direction: row-reverse;
-            background-color: #02A9E5;
-            align-content: center;
-            justify-content: space-between;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        .second-call .event-desc {
-            width: 50%;
-            text-align: justify;
-        }
-
-        .first-call,
-        .third-call {
-            background-image: url('./assets/prancheta.png');
-            height: 300px;
-        }
-
-        .botao {
-            font-size: 5px;
-            text-decoration: none;
-            padding: 14px 10px;
-            border-radius: 0px;
-
-        }
-
-        .destaque {
-            color: white;
-            background-color: tomato;
-
-        }
-
-        .destaque:active {
-            box-shadow: none;
-        }
-
-        @media (max-width: 660px) {
-            .autenticacao {
-                display: none;
-            }
-
-        }
-
-        @media(max-width: 490px) {
-            .menu {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: block;
-                background-color: #fff;
-                float: right;
-                margin-top: 15px;
-                margin-right: 15px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="first-call">
-        <header class="cabecalho">
-
-
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="#inicio">Início</a>
-                    </li>
-                    <li>
-                        <a href="#palestrantes">Palestrantes</a>
-                    </li>
-                    <li>
-                        <a href="#programacao">Programação</a>
-                    </li>
-                    <li>
-                        <a href="#local">Local</a>
-                    </li>
-
-                </ul>
-            </nav>
+    <section style="background-image: url('assets/img/prancheta.png'); background-size: 100%;" id="inicio">
+        <header>
+            <ul class="nav justify-content-end" style="margin-right: 50px; padding-top: 20px;">
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: #fff;" href="#inicio">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="#palestrantes">Palestrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="#programacao">Programação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="#localizacao">Local</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="#patrocinio">Patrocínio</a>
+                </li>
+            </ul>
 
         </header>
-
-        <div class="call-action">
-
-            <div class="logo">
-                <img src="./assets/logo-ct-white.svg" alt="Logo" />
-                <span class="under-logo">Tendências de tecnologia para 2019</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="text-align: center;margin-bottom: 40px;">
+                    <div class="logo">
+                        <img src="assets/img/logo-ct-white.svg" alt="Logo" style="height: 250px;">
+                        <span class="under-logo"
+                            style="color: #FFA031; font-size: 25px; text-shadow: 0px 0px 4px #000; margin-bottom: 20px; font-weight: bold;">Tendências
+                            de tecnologia para 2019</span>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-top: 30px; padding-left: 130px;">
+                    <div class="cta-infos">
+                        <div class="date"><img src="assets/img/calendar.svg" alt="data"><span> 27 JUNHO 2019</span>
+                        </div>
+                        <div class="time"><img src="assets/img/wall-clock.svg" alt="hora"><span> 19:00H</span></div>
+                        <div class="place"><img src="assets/img/placeholder.svg" alt="local"><span>
+                                ExemploTech</span></div>
+                        <a type="button" class="btn btn-participar"
+                            href="https://www.sympla.com.br/cloud-talk__565211" target="_blank">PARTICIPAR</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="col-md-12 countdown-wrapper" style="background-color: #fff; font-size: 30px; text-align: center">
+            <p style="color: #EE5B00; font-weight:bold">FALTAM APENAS &nbsp&nbsp&nbsp&nbsp<span class="days brand-color"
+                    id="dia" style="color: #000; font-weight: bold"></span> DIAS &nbsp&nbsp<span
+                    class="hours brand-color" id="horas" style="color: #000; font-weight: bold"></span> HORAS &nbsp
+                &nbsp<span class="minutes brand-color" id="min" style="color: #000; font-weight: bold"></span> MINUTOS
+                &nbsp&nbsp<span class="seconds brand-color" id="sec" style="color: #000; font-weight: bold"></span>
+                SEGUNDOS</p>
+        </div>
+    </section>
+    <section style="background-image: url('assets/img/fundo-azul.png'); background-size: 100%;" id="sobre">
+        <div class="container">
+            <div class="row" style="width: 100%; margin-top: 30px">
+                <div class="col-md-8">
+                    <div class="event-desc">
+                        <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 23px;">Vamos falar sobre tech?
+                        </h1>
+                        <p class="text-event">As tecnologias exponenciais são inovações e estão crescendo cada vez mais
+                            rápidas,
+                            pois permitem o aumento da geração de valor um uma curva exponencial. As empresas antigas
+                            eram
+                            desenvolvidas em um processo linear, mas com a era digital esse cenário mudou completamente.
+                            As empresas
+                            baseadas em inovação têm seu crescimento bem mais acelerado.<br><br>
+                            Um exemplo clássico é a Netflix que derrubou a gigante Blockbuster. E podemos citar
+                            também outras empresas como Uber, Instagram, que ao entrarem no mercado, vimos empresas com
+                            seus modelos
+                            de negócios consolidados por décadas, se tornarem ultrapassados.<br><br>
+                            Basicamente, toda tecnologia disruptiva surgida nos últimos anos é um exemplo de
+                            tecnologia exponencial, como:</p><br>
 
-            <div class="cta-infos">
+                        <p style="font-size: 18px; font-weight:bold">E-commerce<br>
+                            Mídias Sociais<br>
+                            Internet of Things (IoT)<br>
+                            Inteligência Artificial<br>
+                            Cloud computing<br>
+                            Blockchain
+                        </p>
 
-                <div class="date"><img src="./assets/calendar.svg" alt="data"><span> 27 JUNHO 2019</span></div>
-                <div class="time"><img src="./assets/wall-clock.svg" alt="hora"><span> 19:00H</span></div>
-                <div class="place"><img src="./assets/placeholder.svg" alt="local"><span> ExemploTech</span></div>
-                <a class="button-small-text" href="https://www.sympla.com.br/cloud-talk__565211" target="_blank"> <img
-                        src="https://www.sympla.com.br/images/btn-register se.png"></img> </a>
+                        <p class="text-event">E o <strong>CLOUD TALK</strong> tem como objetivo trazer algumas
+                            tendências de
+                            tecnologia que podem ser utilizadas para o crescimento da sua empresa.</p><br>
+
+                        <p style="font-size: 18px; font-weight:bold">GARANTA JÁ O SEU INGRESSO!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="sympla-widget-565211" height="auto"></div>
+                    <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/565211"></script>
+                </div>
 
             </div>
-
         </div>
-
-    </div>
-    <div class="second-call">
-        <div id="sympla-widget-565211" height="auto"></div>
-        <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/565211"></script>
-        <div class="event-desc">
-            <h2>Vamos falar sobre tech?</h2>
-            <p class="text-event">As tecnologias exponenciais são inovações e estão crescendo cada vez mais rápidas,
-                pois permitem o aumento da geração de valor um uma curva exponencial. As empresas antigas eram
-                desenvolvidas em um processo linear, mas com a era digital esse cenário mudou completamente. As empresas
-                baseadas em inovação têm seu crescimento bem mais acelerado. </p><br>
-            <p class="text-event">Um exemplo clássico é a Netflix que derrubou a gigante Blockbuster. E podemos citar
-                também outras empresas como Uber, Instagram, que ao entrarem no mercado, vimos empresas com seus modelos
-                de negócios consolidados por décadas, se tornarem ultrapassados.</p><br>
-            <p class="text-event">Basicamente, toda tecnologia disruptiva surgida nos últimos anos é um exemplo de
-                tecnologia exponencial, como:</p><br>
-
-            <h4>E-commerce</h4>
-            <h4>Mídias Sociais</h4>
-            <h4>Internet of Things (IoT)</h4>
-            <h4>Inteligência Artificial</h4>
-            <h4>Cloud computing</h4>
-            <h4>Blockchain</h4>
-
-
-            <p class="text-event">E o <strong>CLOUD TALK</strong> tem como objetivo trazer algumas tendências de
-                tecnologia que podem ser utilizadas para o crescimento da sua empresa.</p><br>
-
-            <h4>GARANTA JÁ O SEU INGRESSO!</h4>
-
+    </section>
+    <section style="background-color: #fff" id="palestrantes">
+        <div class="container">
+            <h1 style="font-size: 40px; color: #03A9E5; padding: 20px 0; font-weight: bold">Conheça os Palestrantes</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/jessiane-quadrado.png" style="width: 100%">
+                    <h1 style="background-color: #EE5B00; color:#000;text-align: center">Jessiane Leal</h1>
+                    <p style="color: #000;" class="text-event">Tenho 30 anos, sou formada na Reprograma Front-End,
+                        atualmente atuo como
+                        desenvolvedora Full Stack na PandaPass. Amo meetups, Hackathons, cozinhar, jogar videogame,
+                        assistir anime com a família e, recentemente, comecei a palestrar.</p>
+                </div>
+            </div>
         </div>
+    </section>
+    <section style="background-image: url('assets/img/fundo-azul.png'); background-size: 100%;" id="programacao">
+        <div class="container">
+            <div class="row" style="width: 100%; margin-top: 30px; margin-bottom: 30px">
+                <div class="col-md-8" style="text-align: left">
+                    <div class="event-desc">
+                        <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 23px;">Programação
+                        </h1>
+                        <p class="text-event">- As tendências do mundo Cloud</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: center">
+                    <img src="assets/img/exemplo.png" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #fff" id="localizacao">
 
-    </div>
-    <div class="third-call">
-        <h2>Conheça os Palestrantes</h2>
 
-    </div>
+        <div class="row">
+            <div class="col-md-6" style="margin-bottom: 30px;">
+                <div class="container" style="margin-left: 61px;">
+                    <h1 style="font-size: 40px; color: #03A9E5; padding: 20px 0; font-weight: bold">Localização</h1>
+                    <h1 style="color:#EE5B00">ExemploTech</h1>
+                    <p style="color: #000;" class="text-event">Rua Lorem Ipsum, 000 - Sala 00 <br>Vila Mossoró - SP
+                    </p>
+                    <p style="color:#EE5B00" class="text-event">Ao lado do metrô Mossoró</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.308029477669!2d-46.638951785705835!3d-23.557378084684785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a8b4d648f9%3A0x862df06cefe8bc3e!2sFunda%C3%A7%C3%A3o+Escola+de+Com%C3%A9rcio+%C3%81lvares+Penteado%2C+Campus+Liberdade!5e0!3m2!1spt-BR!2sbr!4v1561426746711!5m2!1spt-BR!2sbr"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url('assets/img/fundo-azul.png'); background-size: 100%;" id="patrocinio">
+        <div class="container">
+            <div class="row" style="width: 100%; margin-top: 30px; margin-bottom: 30px">
+                <div class="col-md-12" style="text-align: left">
+                    <div class="event-desc">
+                        <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 23px;">Patrocínio
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #fff; text-align: center">
+        <p style="font-size: 20px; color: #03A9E5; margin-bottom: 0">Todos os direitos reservados - 2019</p>
+    </footer>
     <script>
         window.onhashchange = function (e) {
             const oldUrl = e.oldURL.split('#')[1]
@@ -270,6 +191,43 @@
             oldMenu && oldMenu.classList.remove('selected')
             newMenu && newMenu.classList.add('selected')
         }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 27, 2019 19:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get todays date and time
+            var now = new Date().getTime();
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Display the result in the element with id="demo"
+            document.getElementById("dia").innerHTML = days;
+            document.getElementById("horas").innerHTML = hours;
+            document.getElementById("min").innerHTML = minutes;
+            document.getElementById("sec").innerHTML = seconds;
+            //  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            //  + minutes + "m " + seconds + "s ";
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                var html = '<span class="">O WORKSHOP começou!!</span>';
+            }
+        }, 1000);
     </script>
 </body>
 

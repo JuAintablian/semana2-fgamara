@@ -1,0 +1,180 @@
+ body {
+     margin: 0;
+     background-color: #02A9E5;
+     color: #fafafa;
+     font-family: 'Montserrat', sans-serif;
+
+ }
+
+
+ .logo img {
+     float: left;
+     width: 100%;
+     height: 120px;
+
+ }
+
+ .call-action {
+     display: flex;
+     width: 100%;
+     margin-top: 25px;
+ }
+
+ .cta-infos {
+     display: flex;
+     flex-direction: column;
+     font-size: 30px;
+     font-weight: bold;
+ }
+
+ .call-action .logo {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .cabecalho {
+     position: -webkit-sticky;
+     background-color: transparent;
+     margin: 0 0 0 0;
+     height: 54px;
+
+     display: flex;
+
+
+
+ }
+
+ .menu-toggle {
+     display: none;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding-bottom: 50px;
+ }
+
+ li {
+     float: left;
+     height: 54px;
+ }
+
+ li:first-child {
+     margin-left: 15px;
+ }
+
+ .menu {
+     width: 100%;
+     display: flex;
+     align-content: right;
+     justify-content: right
+ }
+
+ .menu a {
+
+     text-decoration: none;
+     font-family: 'Oswald', sans-serif;
+     color: white;
+     font-size: 20px;
+     display: block;
+     padding: 12px 14px;
+     text-align: right;
+
+ }
+
+ .nav-link a:hover,
+ .selected {
+     background-color: black;
+
+
+ }
+
+
+ .button-small-text {
+     margin-top: 15px;
+ }
+
+ .autenticacao a {
+     font-family: 'Oswald', sans-serif;
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     margin-left: 10px;
+     margin-right: 20px;
+
+
+ }
+
+ .second-call {
+     display: flex;
+     flex-direction: row-reverse;
+     align-content: center;
+     justify-content: space-between;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .second-call .event-desc {
+     text-align: justify;
+ }
+
+ .text-event{
+     font-size: 18px;
+     line-height: 22px;
+ }
+
+ .first-call,
+ .third-call {
+     background-image: url('/assets/img/topo.png');
+     height: 300px;
+ }
+
+ .botao {
+     font-size: 5px;
+     text-decoration: none;
+     padding: 14px 10px;
+     border-radius: 0px;
+
+ }
+
+ .destaque {
+     color: white;
+     background-color: tomato;
+
+ }
+
+ .destaque:active {
+     box-shadow: none;
+ }
+
+ .btn-participar{
+    border-radius: 1.25rem;
+    background-color: #EE5B00;
+    width: 130px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgba(50, 28, 60, 1);
+    margin-top: 20px;
+ }
+
+ @media (max-width: 660px) {
+     .autenticacao {
+         display: none;
+     }
+
+ }
+
+ @media(max-width: 490px) {
+     .menu {
+         display: none;
+     }
+
+     .menu-toggle {
+         display: block;
+         background-color: #fff;
+         float: right;
+         margin-top: 15px;
+         margin-right: 15px;
+     }
+ }
