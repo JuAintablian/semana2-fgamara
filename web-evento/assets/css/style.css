@@ -74,8 +74,8 @@
      text-align: right;
  }
 
- .nav-link a:hover, .selected {
-     margin-top: 3px solid white;
+ .nav-link a:hover {
+     border-top: 3px solid white;
  }
 
  .button-small-text {
