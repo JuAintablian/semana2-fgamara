@@ -85,7 +85,7 @@
 
  .nav-link a:hover,
  .selected {
-     background-color: black;
+     margin-top:3px solid white;
 
 
  }
@@ -150,7 +150,7 @@
 
  .btn-participar{
     border-radius: 1.25rem;
-    background-color: #EE5B00;
+    background-color: #EF02C0;
     width: 130px;
     font-weight: bold;
     color: #fff;

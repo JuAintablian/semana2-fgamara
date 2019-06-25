@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142690176-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142690176-1');
+    </script>
     <meta charset="UTF-8">
     <title>Cloud talk</title>
     <link rel="shortcut icon" href="assets/img/ico/favicon.png">
@@ -16,51 +25,52 @@
 
 <body>
     <section style="background-image: url('assets/img/prancheta.png'); background-size: 100%;" id="inicio">
-        <header>
-            <ul class="nav justify-content-end" style="margin-right: 50px; padding-top: 20px;">
-                <li class="nav-item">
-                    <a class="nav-link active" style="color: #fff;" href="#inicio">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #fff;" href="#sobre">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #fff;" href="#palestrantes">Palestrantes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #fff;" href="#programacao">Programação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #fff;" href="#localizacao">Local</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #fff;" href="#patrocinio">Patrocínio</a>
-                </li>
-            </ul>
 
-        </header>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="text-align: center;margin-bottom: 40px;">
+            <div class="row" style="margin-top:0;display: flex;align-items: center;">
+                <div class="col-md-4" style="text-align: center;margin-bottom: 40px; margin-top:35px;">
                     <div class="logo">
                         <img src="assets/img/logo-ct-white.svg" alt="Logo" style="height: 250px;">
-                        <span class="under-logo"
-                            style="color: #FFA031; font-size: 25px; text-shadow: 0px 0px 4px #000; margin-bottom: 20px; font-weight: bold;">Tendências
-                            de tecnologia para 2019</span>
                     </div>
+
                 </div>
-                <div class="col-md-6" style="margin-top: 30px; padding-left: 130px;">
-                    <div class="cta-infos">
-                        <div class="date"><img src="assets/img/calendar.svg" alt="data"><span> 27 JUNHO 2019</span>
+                <div class="col-md-4"><span class="under-logo"
+                        style="color: #FFA031; font-size: 25px; text-shadow: 0px 0px 4px #000; margin-bottom: 20px;margin-top: 20px; font-weight: bold;text-align: justify">COMO
+                        &nbsp&nbspO &nbsp&nbspCLOUD &nbsp&nbspVAI MUDAR SUA VIDA COM
+                    </span><span
+                        style="font-size: 44px;color: #FFA031; text-shadow: 0px 0px 4px #000;font-weight: bolder">TECNOLOGIA</span>
+                </div>
+                <div class="col-md-4" style="margin-top: 0px; padding-left: 0px;align-self: flex-start">
+                    <div class="cta-infos container"
+                        style="padding-top:0px;margin-top: 0; background-color: rgba(2, 169, 229, 0.7);  border-radius: 0px 0px 15px 15px;">
+                        <div class="date" style="margin-top: 50px"><img src="assets/img/calendar.svg" alt="data"><span>
+                                27 JUNHO 2019</span>
                         </div>
                         <div class="time"><img src="assets/img/wall-clock.svg" alt="hora"><span> 19:00H</span></div>
                         <div class="place"><img src="assets/img/placeholder.svg" alt="local"><span>
                                 ExemploTech</span></div>
-                        <a type="button" class="btn btn-participar"
-                            href="https://www.sympla.com.br/cloud-talk__565211" target="_blank">PARTICIPAR</a>
+                        <div class="text-center" style="padding-bottom: 20px;"><a type="button"
+                                class="btn btn-participar" href="https://www.sympla.com.br/cloud-talk__565211"
+                                target="_blank">PARTICIPAR</a></div>
                     </div>
                 </div>
             </div>
+            <nav>
+                <ul class="nav justify-content-center"
+                    style="margin-right: 50px; padding-top: 20px; height: 30px; background-color: rgba(2, 169, 229, 0.7); margin-right: 0px; border-radius: 15px 15px 0px 0px;font-weight:bold; font-size: 1.2em;text-shadow: 0px 0px 4px #000">
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff; opacity: 1;" href="#palestrantes">Palestrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff; opacity: 1;" href="#programacao">Programação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff; opacity: 1;" href="#localizacao">Local</a>
+                    </li>
+                </ul>
+
+            </nav>
         </div>
         <div class="col-md-12 countdown-wrapper" style="background-color: #fff; font-size: 30px; text-align: center">
             <p style="color: #EE5B00; font-weight:bold">FALTAM APENAS &nbsp&nbsp&nbsp&nbsp<span class="days brand-color"
@@ -79,18 +89,13 @@
                         <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 23px;">Vamos falar sobre tech?
                         </h1>
                         <p class="text-event">As tecnologias exponenciais são inovações e estão crescendo cada vez mais
-                            rápidas,
-                            pois permitem o aumento da geração de valor um uma curva exponencial. As empresas antigas
-                            eram
-                            desenvolvidas em um processo linear, mas com a era digital esse cenário mudou completamente.
-                            As empresas
-                            baseadas em inovação têm seu crescimento bem mais acelerado.<br><br>
-                            Um exemplo clássico é a Netflix que derrubou a gigante Blockbuster. E podemos citar
-                            também outras empresas como Uber, Instagram, que ao entrarem no mercado, vimos empresas com
-                            seus modelos
-                            de negócios consolidados por décadas, se tornarem ultrapassados.<br><br>
-                            Basicamente, toda tecnologia disruptiva surgida nos últimos anos é um exemplo de
-                            tecnologia exponencial, como:</p><br>
+                            rápidas.
+                            As empresas baseadas em inovação têm seu crescimento bem mais acelerado.<br><br>
+                            Um exemplo clássico é a Netflix que derrubou a gigante Blockbuster. E podemos citar também
+                            outras empresas como Uber, Instagram, que ao entrarem no mercado, vimos empresas
+                            consolidadas por décadas, se tornarem ultrapassadas.<br><br>
+                            Basicamente, toda tecnologia disruptiva surgida nos últimos anos é um exemplo de tecnologia
+                            exponencial, como</p><br>
 
                         <p style="font-size: 18px; font-weight:bold">E-commerce<br>
                             Mídias Sociais<br>
@@ -101,8 +106,8 @@
                         </p>
 
                         <p class="text-event">E o <strong>CLOUD TALK</strong> tem como objetivo trazer algumas
-                            tendências de
-                            tecnologia que podem ser utilizadas para o crescimento da sua empresa.</p><br>
+                            tendências de tecnologia e o que o mercado vem exigindo, tanto de empresas, quanto de
+                            profissionais.</p><br>
 
                         <p style="font-size: 18px; font-weight:bold">GARANTA JÁ O SEU INGRESSO!</p>
                     </div>
@@ -117,16 +122,33 @@
     </section>
     <section style="background-color: #fff" id="palestrantes">
         <div class="container">
-            <h1 style="font-size: 40px; color: #03A9E5; padding: 20px 0; font-weight: bold">Conheça os Palestrantes</h1>
+            <h1 style="font-size: 30px; color: #03A9E5; padding: 20px 0; font-weight: bold;text-align: center">Conheça
+                os Palestrantes</h1>
             <div class="row">
+
                 <div class="col-md-4">
-                    <img src="assets/img/jessiane-quadrado.png" style="width: 100%">
-                    <h1 style="background-color: #EE5B00; color:#000;text-align: center">Jessiane Leal</h1>
-                    <p style="color: #000;" class="text-event">Tenho 30 anos, sou formada na Reprograma Front-End,
-                        atualmente atuo como
-                        desenvolvedora Full Stack na PandaPass. Amo meetups, Hackathons, cozinhar, jogar videogame,
-                        assistir anime com a família e, recentemente, comecei a palestrar.</p>
+                    <img class="rounded-top" src="assets/img/jessiane-quadrado.png" style="width: 100%">
+                    <h1 style="background-color: #EE5B00; color:#fff;text-align: center;">Jessiane Leal</h1>
+                    <p style="color: #000;" class="text-event">Formada pelo Reprograma como Front-End, atua como
+                        desenvolvedora Full-Stack na PandaPass.
+                        Ama meetups, cozinhar, jogar videogame, hackathons, assistir animes com a família e,
+                        recentemente, começou a palestrar.</p>
                 </div>
+                <div class="col-md-4">
+                    <img class="rounded-top" src="assets/img/marcel.png" style="width: 100%">
+                    <h1 style="background-color: #EE5B00; color:#fff;text-align: center;">Marcel Spadoto</h1>
+                    <p style="color: #000;" class="text-event">Palestrante, mentor, professor, economista, contador,
+                        pós-graduado em vendas & marketing pela ESPM, especialização em negócios pela FGV, consultor
+                        empresarial em vendas.
+                        Fez parte de startups importantes do mercado de seguros online. Participou de processos de
+                        desinvestimento e vendas de negócios no segmento de tecnologia.<br> Professor da FIA-USP e UBS.
+                    </p>
+
+                </div>
+
+
+
+
             </div>
         </div>
     </section>
@@ -141,7 +163,7 @@
                     </div>
                 </div>
                 <div class="col-md-4" style="text-align: center">
-                    <img src="assets/img/exemplo.png" style="width: 100%">
+                    <img src="assets/img/exemplo.png" style="width: 100%; border-radius: 10px 10px 10px 10px">
                 </div>
             </div>
         </div>
@@ -153,7 +175,7 @@
             <div class="col-md-6" style="margin-bottom: 30px;">
                 <div class="container" style="margin-left: 61px;">
                     <h1 style="font-size: 40px; color: #03A9E5; padding: 20px 0; font-weight: bold">Localização</h1>
-                    <h1 style="color:#EE5B00">ExemploTech</h1>
+                    <h4 style="color:#EE5B00;font-weight: bold">ExemploTech</h4>
                     <p style="color: #000;" class="text-event">Rua Lorem Ipsum, 000 - Sala 00 <br>Vila Mossoró - SP
                     </p>
                     <p style="color:#EE5B00" class="text-event">Ao lado do metrô Mossoró</p>
@@ -166,20 +188,19 @@
             </div>
         </div>
     </section>
-    <section style="background-image: url('assets/img/fundo-azul.png'); background-size: 100%;" id="patrocinio">
+    <!-- <section style="background-image: url('assets/img/fundo-azul.png'); background-size: 100%;" id="patrocinio">
         <div class="container">
             <div class="row" style="width: 100%; margin-top: 30px; margin-bottom: 30px">
                 <div class="col-md-12" style="text-align: left">
-                    <div class="event-desc">
-                        <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 23px;">Patrocínio
-                        </h1>
+                    <div class="event-desc text-center">
+                        <h1 style="font-size: 20px; font-weight: bold; margin-bottom: 23px;">Patrocínio</h1>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <footer style="background-color: #fff; text-align: center">
-        <p style="font-size: 20px; color: #03A9E5; margin-bottom: 0">Todos os direitos reservados - 2019</p>
+        <p style="font-size: 15px; color: #03A9E5; margin-bottom: 0">Todos os direitos reservados - 2019</p>
     </footer>
     <script>
         window.onhashchange = function (e) {
